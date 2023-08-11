@@ -5,120 +5,250 @@
     --border: #29292E;
     --border-menu-mobile: #A8A8B3;
     --text-color-menu-mobile: #E1E1E6;
-  }
-
-*{
-    background: var(--backgrond);
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    font-family: "Manrope", Arial, Helvetica, sans-serif;
-    color: var(--text-color);
-    text-decoration: none;
-    text-align: center;
-}
-
-.header {
-    
-}
-
-.nav-img-mobile {
-    display: none;
-}
-
-body{
-    height: 100%;
-}
-
-.navbar{
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 24px;
-
-}
-
-.navmenu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 35px;
-}
-
-li{
-    text-align: center;
-    position:relative;
-    float:left;
-}
-
-.btn {
-    
 }
 
 .code{
     text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
-    color: #000;
+    color: #050000;
 }
 
-a:hover{
-    color: var(--button);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
-.burger {
-    display: none;
+body {
+    background-color: var(--backgrond);
+    font-family: "Manrope";
+    font-weight: 400;
+    color: var(--text-color);
+    text-decoration: none;
+    background-image: url("./assets/blur-mobile.png");
+    background-repeat: no-repeat;
+    background-size: 100% 250px;
+    background-position: bottom;
+    min-height: 100vh; /* utiliza a tela inteira independente do tamanho*/
+}
+
+.header {
+    height: 70px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    border-bottom: var(--border) 1px solid;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    width: 200px;
+    height: 50px;
+    background-image: url("./assets/logo-mobile.svg");
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-top: 15px;
+    justify-content: flex-start;
+}
+
+.coffe-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+}
+
+.coffe-button .button {
+    color: var(--text-color);
+    border-radius: 6px;
+    border: 2px solid var(--button);
+    background-color: transparent;
+    height: 37px;
+    width: 172px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
 }
 
-.bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+.coffe-button.head {
+    display: none;
 }
 
-@media(max-width:768px){
-    .nav-img-mobile{
-        display: block;
+.coffe-button.main {
+    margin: auto;
+}
+
+.maior {
+    padding-left: 3px;
+}
+
+.navbar {
+    min-width: 95px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 24px;
+}
+
+.navmenu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+    transition: 0.3s;
+    background-color: var(--backgrond);
+}
+
+.nav-item{
+    padding: 20px;
+    border-bottom: var(--border) 1px solid; 
+    display: block;
+}
+
+.navbar li :hover {
+    border-left: var(--button) 4px solid;
+    left: 0;
+    padding: 20px;
+}
+
+.navmenu.active{
+    left: 0;
+    width: 100%;
+    opacity: 1;
+    height: 100vh;
+}   
+
+.navbar a {
+    color: var(--text-color-menu-mobile);
+}
+
+.navbar a:hover {
+    color: var(--text-color);
+}
+
+.hamburger {
+    background-image: url("./assets/menu-buguer-open.svg");
+    background-repeat: no-repeat;
+    display: block;
+    text-align: left;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.hamburger.active {
+    background-image: url("./assets/menu-buguer-close.svg");
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coffe-img {
+    width: 100%;
+    overflow: clip;
+}
+
+.great {
+    font-weight: bold;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 120px 0 60px;
+}
+
+.mobile-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin: 70px;
+}
+
+@media (min-width: 600px) {
+    .mobile-text {
+        display:none;
     }
-    .nav-img-desktop{
+
+    .coffe-button.main{
         display: none;
     }
-    .burger{
-        display: block;
+
+    .coffe-button.head {
+        display: flex;
     }
 
-    .burger.active .bar:nth-child(2){
-        opacity: 0;
+    body {
+        background-image: url("./assets/blur-1.png"), url("./assets/blur-2.png");
+        background-position: bottom left, top right;
+        background-repeat: no-repeat, no-repeat;
+        background-size: 600px 600px, 600px 600px;
     }
 
-    .burger.active .bar:nth-child(1){
-        transform: translateY(8px) rotate(45deg);
-    }
-    .burger.active .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg);
+    .logo {
+        background-image: url("./assets/logo-desktop.svg");
+        width: 50px;
+        height: 50px;
+        margin-top: 16px;
     }
 
-    .navmenu{
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        gap: 0;
-        flex-direction: column;
-        background-color: var(--border-menu-mobile);
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    .header {
+        border-bottom: none;
+        display: flex;
+        height: auto;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar {
+        display: flex;
+        width: auto;
+        justify-content: space-between;
+    }
+
+    .navmenu {
+        position: initial;
+        display: flex;
+        flex-direction: row;
+        background-color: transparent;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+        gap: 35px;
     }
 
     .nav-item{
-        margin: 16px 0;
+        padding: 0px;
+        border-bottom: transparent; 
+        display: flex;
     }
 
-    .navmenu.active{
-        left: 0;
+    .nav-item li :hover {
+        border: none;
+    }
+
+    .navbar a:hover {
+        color: var(--button);
     }
 }
