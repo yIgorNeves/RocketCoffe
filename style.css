@@ -113,10 +113,12 @@ body {
     display: block;
 }
 
-.navbar li :hover {
+.navbar ul :hover {
     border-left: var(--button) 4px solid;
-    left: 0;
-    padding: 20px;
+}
+
+.navbar li :hover {
+    border: none;
 }
 
 .navmenu.active{
@@ -245,7 +247,7 @@ main {
         display: flex;
     }
 
-    .navbar li :hover {
+    .navbar ul :hover {
         border: none;
         padding: 0;
     }
