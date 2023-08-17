@@ -35,7 +35,7 @@ body {
 .header {
     height: 70px;
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     align-items: center;
     border-bottom: var(--border) 1px solid;
     flex-wrap: wrap;
@@ -48,8 +48,9 @@ body {
     height: 50px;
     background-image: url("./assets/logo-mobile.svg");
     background-repeat: no-repeat;
-    margin: auto;
+    margin: 0;
     margin-top: 15px;
+    margin-left: 5px;
     justify-content: flex-start;
 }
 
@@ -89,8 +90,9 @@ body {
 .navbar {
     min-width: 95px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 0 24px;
+    justify-content: center;
 }
 
 .navmenu {
@@ -176,6 +178,7 @@ main {
 }
 
 @media (min-width: 600px) {
+
     .mobile-text {
         display:none;
     }
@@ -186,6 +189,7 @@ main {
 
     .coffe-button.head {
         display: flex;
+        justify-content: space-around;
     }
 
     body {
@@ -199,42 +203,39 @@ main {
         background-image: url("./assets/logo-desktop.svg");
         width: 50px;
         height: 50px;
+        margin: 0;
         margin-top: 16px;
-    }
-
-    .header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        margin-left: 5px;
     }
 
     .hamburger{
         display: none;
     }
 
+    .navbar {
+        gap: 35px;
+    }
+
     .header {
         border-bottom: none;
         display: flex;
         height: auto;
-        flex-direction: row;
         justify-content: center;
         align-items: center;
-    }
-
-    .navbar {
-        display: flex;
-        width: auto;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        align-content: space-between;
+        gap: 35px;
     }
 
     .navmenu {
-        position: initial;
+        position: static;
+        left: 0;
         display: flex;
         flex-direction: row;
         background-color: transparent;
         align-items: center;
-        justify-content: space-between;
         list-style: none;
+        flex-wrap: wrap;
         gap: 35px;
     }
 
@@ -244,8 +245,9 @@ main {
         display: flex;
     }
 
-    .nav-item li :hover {
+    .navbar li :hover {
         border: none;
+        padding: 0;
     }
 
     .navbar a:hover {
