@@ -9,7 +9,7 @@ Este projeto tem como objetivo o estudo basico de CSS com grande foco em Flex-Bo
 * JavaScript;
 
 ## :rocket: Rodando o projeto
-Para rodar o repositório é necessário clonar o mesmo, e abrir o arquivo index.html em seu navegador.
+Para rodar o projeto é necessário clonar o mesmo, e abrir o arquivo index.html em seu navegador.
 
 ## :handshake: Colaboradores
 <table>
