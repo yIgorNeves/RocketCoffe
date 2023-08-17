@@ -6,7 +6,7 @@ Este projeto tem como objetivo o estudo basico de CSS com grande foco em Flex-Bo
 ## :wrench: Tecnologias utilizadas
 * HTML;
 * CSS;
-* JavaScript;
+* JavaScript.
 
 ## :rocket: Rodando o projeto
 Para rodar o projeto é necessário clonar o mesmo, e abrir o arquivo index.html em seu navegador, caso deseje vizualizar sem ter que fazer o clone pode clicar <a href="https://yigorneves.github.io/RocketCoffe/#">aqui </a>.
