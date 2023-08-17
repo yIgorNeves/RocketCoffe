@@ -1,10 +1,7 @@
 <h1 align="center">:file_cabinet: Rocket Coffe</h1>
 
 ## :memo: Descrição
-Este projeto tem como objetivo o estudo basico de CSS com grande foco em Flex-Box. A proposta veio do mentor <a href="http://github.com/williamrmendonca"> William Mendonça </a> para poder temos uma base mais solida para futuras tecnologias. O projeto base é um desafio da Rocketseat (https://efficient-sloth-d85.notion.site/Desafio-RocketCoffee-7802895f0dd44da5a6f71a64badc7e72) onde é possivel encontar o projeto do Figma e os assets nescessarios.
-
-## :books: Funcionalidades
-* <b>Mobile First</b>: Com o obejetivo de facilitar a contrução de aplicações multiplataformas o mobile first facilita a construção das aplicações.
+Este projeto tem como objetivo o estudo basico de CSS com grande foco em Flex-Box. A proposta veio do mentor <a href="http://github.com/williamrmendonca"> William Mendonça </a> para poder temos uma base mais solida para futuras tecnologias. O projeto base é um desafio da <a href = "https://efficient-sloth-d85.notion.site/Desafio-RocketCoffee-7802895f0dd44da5a6f71a64badc7e72"> Rocketseat </a>, o desafio pede para seguirmos o layout disponivel no Figma e solicitado que antenda todos os requisitos.
 
 ## :wrench: Tecnologias utilizadas
 * HTML;
@@ -13,7 +10,6 @@ Este projeto tem como objetivo o estudo basico de CSS com grande foco em Flex-Bo
 
 ## :rocket: Rodando o projeto
 Para rodar o repositório é necessário clonar o mesmo, e abrir o arquivo index.html em seu navegador.
-
 
 ## :handshake: Colaboradores
 <table>
